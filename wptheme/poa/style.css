@@ -78,3 +78,21 @@ header#top nav li.menu-item.menu-evaluation a span {
 	color: #d9e3ed !important;
 	font-family: "Archivo Narrow", arial, sans-serif;
 }
+
+@media only screen and (max-width: 1139px) and (min-width: 1001px) {
+	header#top nav li.menu-item.menu-evaluation {
+		display: none;
+	}
+}
+@media only screen and (max-width: 1000px) and (min-width: 1px) {
+	header#top a#logo {
+		background-size: 100%;
+		color: transparent !important;
+		height: 64px;
+		margin: 0 !important;
+		padding: 0;
+		text-shadow: none;
+		top: -6px !important;
+		width: 48px;
+	}
+}
