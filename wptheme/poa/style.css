@@ -18,3 +18,17 @@ For older themes, and themes that do not use wp_enqueue_style() to enqueue their
 /* =Theme customization starts here
 -------------------------------------------------------------- */
 
+header#top a#logo {
+	background: url(images/POA_logomark.png) no-repeat 0 0;
+	font-family: "Josefin Sans", "Archivo Narrow", arial, sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: .25px;
+	line-height: 1.05;
+	padding: 20px 0px 60px 100px;
+	position: absolute;
+	text-shadow: 0px 0px .5px #fff;
+	text-transform: uppercase;
+	top: -38px;
+	width: 300px;
+}
