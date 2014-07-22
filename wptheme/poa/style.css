@@ -96,3 +96,8 @@ header#top nav li.menu-item.menu-evaluation a span {
 		width: 48px;
 	}
 }
+
+/**
+ * ROWS AND COLUMNS
+ */
+.wpb_row .span_12 > .col.padding-1-percent { padding: 0%; }
