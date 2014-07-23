@@ -166,6 +166,6 @@ div.menu-footer-menu-container ul#menu-footer-menu li.menu-item {
 	margin: auto 20px auto auto;
 	text-transform: uppercase;
 }
-#footer-outer #footer-widgets .col ul li {
+#footer-outer #footer-widgets .col .menu-footer-menu-container ul.menu-footer-menu li.menu-item {
 	border-bottom: none !important;
 }
