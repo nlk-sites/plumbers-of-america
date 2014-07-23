@@ -19,6 +19,16 @@ For older themes, and themes that do not use wp_enqueue_style() to enqueue their
 -------------------------------------------------------------- */
 
 /**
+ *	MISC
+ */
+.blue-cookie {
+	color: #9fcaea;
+	font-family: "Cookie";
+	line-height: 1;
+}
+
+
+/**
  *	FONTS
  */
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans:700);
@@ -38,7 +48,7 @@ header#top a#logo {
 	text-shadow: 0px 0px .5px #fff;
 	text-transform: uppercase;
 	top: -38px;
-	width: 330px;
+	width: 350px;
 }
 
 header#top nav li#search-btn { display: none; }
@@ -101,3 +111,16 @@ header#top nav li.menu-item.menu-evaluation a span {
  * ROWS AND COLUMNS
  */
 .wpb_row .span_12 > .col.padding-1-percent { padding: 0%; }
+
+
+/**
+ * MENUS
+ */
+
+/* * * Footer Menu * * */
+div.menu-footer-menu-container ul#menu-footer-menu li.menu-item {
+	display: inline-block;
+	font-family: "Archivo Narrow", arial, sans-serif;
+	margin: auto 20px auto auto;
+	text-transform: uppercase;
+}
