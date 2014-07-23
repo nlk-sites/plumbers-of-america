@@ -26,6 +26,25 @@ For older themes, and themes that do not use wp_enqueue_style() to enqueue their
 	font-family: "Cookie";
 	line-height: 1;
 }
+img.img-with-animation {
+	-webkit-filter: brightness(100%);
+	-moz-filter: brightness(100%);
+	-ms-filter: brightness(100%);
+	filter: brightness(100%);
+	-webkit-transition: -webkit-filter 1s;
+	-moz-transition: -moz-filter 1s;
+	-ms-transition: -ms-filter 1s;
+    transition: -webkit-filter 1s;
+    transition: -moz-filter 1s;
+    transition: -ms-filter 1s;
+    transition: filter 1s;
+}
+img.img-with-animation:hover {
+	-webkit-filter: brightness(250%);
+	-moz-filter: brightness(250%);
+	-ms-filter: brightness(250%);
+	filter: brightness(250%);
+}
 
 
 /**
@@ -124,7 +143,9 @@ div#footer-contact span {
 	font-family: "Archivo Narrow", arial, sans-serif;
 	font-size: 24px;
 }
-
+div#footer-contact span.corp-phone {
+	color: #fff;
+}
 /**
  *	ROWS AND COLUMNS
  */
@@ -141,6 +162,11 @@ div#footer-contact span {
 div.menu-footer-menu-container ul#menu-footer-menu li.menu-item {
 	display: inline-block;
 	font-family: "Archivo Narrow", arial, sans-serif;
+	font-weight: 700;
+	letter-spacing: 1px;
 	margin: auto 20px auto auto;
 	text-transform: uppercase;
+}
+#footer-outer #footer-widgets .col ul li {
+	border-bottom: none !important;
 }
