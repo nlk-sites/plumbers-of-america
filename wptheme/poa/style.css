@@ -107,14 +107,34 @@ header#top nav li.menu-item.menu-evaluation a span {
 	}
 }
 
+
 /**
- * ROWS AND COLUMNS
+ *	FOOTER
+ */
+div#footer-contact {
+	background-color: rgba(0,0,0,.125);
+	border-radius: 99px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,.25) inset, -1px -1px 2px rgba(255,255,255,0.25) inset;
+	float: right;
+	padding: 10px 20px;
+	text-align: center;
+}
+
+div#footer-contact span {
+	font-family: "Archivo Narrow", arial, sans-serif;
+	font-size: 24px;
+}
+
+/**
+ *	ROWS AND COLUMNS
  */
 .wpb_row .span_12 > .col.padding-1-percent { padding: 0%; }
 
 
+
+
 /**
- * MENUS
+ *	MENUS
  */
 
 /* * * Footer Menu * * */
