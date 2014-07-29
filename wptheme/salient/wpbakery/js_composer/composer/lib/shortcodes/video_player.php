@@ -1,3 +1,3 @@
-<?php
-class WPBakeryShortCode_VC_Video extends WPBakeryShortCode {
+<?php
+class WPBakeryShortCode_VC_Video extends WPBakeryShortCode {
 }

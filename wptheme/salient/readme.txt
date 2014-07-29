@@ -1,3 +1,3 @@
-Thank you for purchasing Salient!
-
+Thank you for purchasing Salient!
+
 Theme by themenectar.com

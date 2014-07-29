@@ -1,171 +1,171 @@
-/*
- Theme Name:   POA (Salient Child)
- Theme URI:    http://example.com/twenty-fourteen-child/
- Description:  Salient Child Theme
- Author:       Tim Spinks
- Author URI:   http://ninthlink.com
- Template:     salient
- Version:      1.0.0
- Text Domain:  poa
-*/
-
-/*
-For older themes, and themes that do not use wp_enqueue_style() to enqueue their stylesheet, use the following line where twentyfourteen is the name of the directory where the theme resides:
-*/
-@import url("../salient/style.css");
-
-/**
- *	FONTS
- */
-@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:700);
-
-/* =Theme customization starts here
--------------------------------------------------------------- */
-
-/**
- *	MISC
- */
-.blue-cookie {
-	color: #9fcaea;
-	font-family: "Cookie";
-	line-height: 1;
-}
-div.img-hover-state .wpb_wrapper img {
-	-webkit-filter: brightness(100%);
-	-moz-filter: brightness(100%);
-	-ms-filter: brightness(100%);
-	filter: brightness(100%);
-	-webkit-transition: -webkit-filter .5s;
-	-moz-transition: -moz-filter .5s;
-	-ms-transition: -ms-filter .5s;
-    transition: filter .5s;
-    transition: -webkit-filter .5s;
-    transition: -moz-filter .5s;
-    transition: -ms-filter .5s;
-}
-div.img-hover-state .wpb_wrapper:hover img {
-	-webkit-filter: brightness(250%);
-	-moz-filter: brightness(250%);
-	-ms-filter: brightness(250%);
-	filter: brightness(250%);
-}
-
-
-/**
- *	HEADER
- */
-header#top a#logo {
-	background: url(images/POA_logomark.png) no-repeat 0 0;
-	font-family: "Josefin Sans", "Archivo Narrow", arial, sans-serif;
-	font-size: 34px;
-	font-weight: 700;
-	letter-spacing: .125px;
-	line-height: 1.05;
-	padding: 8px 0px 60px 114px;
-	position: absolute;
-	text-shadow: 0px 0px .5px #fff;
-	text-transform: uppercase;
-	top: -38px;
-	width: 350px;
-}
-
-header#top nav li#search-btn { display: none; }
-header#top nav li.menu-item:before {
-	content: '';
-	display: block;
-	float: right;
-	height: 34px;
-	position: absolute;
-	top: 0;
-	width: 1px;
-
-	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(225,225,225,0.51) 35%, rgba(225,225,225,0.65) 45%, rgba(225,225,225,0.65) 55%, rgba(225,225,225,0.51) 65%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(35%,rgba(225,225,225,0.51)), color-stop(45%,rgba(225,225,225,0.65)), color-stop(55%,rgba(225,225,225,0.65)), color-stop(65%,rgba(225,225,225,0.51)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(225,225,225,0.51) 35%,rgba(225,225,225,0.65) 45%,rgba(225,225,225,0.65) 55%,rgba(225,225,225,0.51) 65%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(225,225,225,0.51) 35%,rgba(225,225,225,0.65) 45%,rgba(225,225,225,0.65) 55%,rgba(225,225,225,0.51) 65%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(225,225,225,0.51) 35%,rgba(225,225,225,0.65) 45%,rgba(225,225,225,0.65) 55%,rgba(225,225,225,0.51) 65%,rgba(255,255,255,0) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(225,225,225,0.51) 35%,rgba(225,225,225,0.65) 45%,rgba(225,225,225,0.65) 55%,rgba(225,225,225,0.51) 65%,rgba(255,255,255,0) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
-}
-header#top nav li.menu-item:last-child:before { display: none; }
-header#top nav li.menu-item:first-child:before { display: none; }
-header#top nav li.menu-item.menu-evaluation {
-	width: 210px;
-}
-header#top nav li.menu-item.menu-evaluation a {
-	color: #9fcaea !important;
-	font-family: "Cookie";
-	font-size: 28px;
-	line-height: 1;
-	position: absolute;
-	text-align: center;
-	top: -25px;
-	width: 210px;
-}
-header#top nav li.menu-item.menu-evaluation a span {
-	color: #d9e3ed !important;
-	font-family: "Archivo Narrow", arial, sans-serif;
-}
-
-@media only screen and (max-width: 1139px) and (min-width: 1001px) {
-	header#top nav li.menu-item.menu-evaluation {
-		display: none;
-	}
-}
-@media only screen and (max-width: 1000px) and (min-width: 1px) {
-	header#top a#logo {
-		background-size: 100%;
-		color: transparent !important;
-		height: 64px;
-		margin: 0 !important;
-		padding: 0;
-		text-shadow: none;
-		top: -6px !important;
-		width: 48px;
-	}
-}
-
-
-/**
- *	FOOTER
- */
-div#footer-contact {
-	background-color: rgba(0,0,0,.125);
-	border-radius: 99px;
-	box-shadow: 1px 1px 2px rgba(0,0,0,.25) inset, -1px -1px 2px rgba(255,255,255,0.25) inset;
-	float: right;
-	padding: 10px 20px;
-	text-align: center;
-}
-
-div#footer-contact span {
-	font-family: "Archivo Narrow", arial, sans-serif;
-	font-size: 24px;
-}
-div#footer-contact span.corp-phone {
-	color: #fff;
-}
-/**
- *	ROWS AND COLUMNS
- */
-.wpb_row .span_12 > .col.padding-1-percent { padding: 0%; }
-
-
-
-
-/**
- *	MENUS
- */
-
-/* * * Footer Menu * * */
-div.menu-footer-menu-container ul#menu-footer-menu li.menu-item {
-	display: inline-block;
-	font-family: "Archivo Narrow", arial, sans-serif;
-	font-weight: 700;
-	letter-spacing: 1px;
-	margin: auto 20px auto auto;
-	text-transform: uppercase;
-}
-#footer-outer #footer-widgets .col .menu-footer-menu-container ul.menu-footer-menu li.menu-item {
-	border-bottom: none !important;
+/*
+ Theme Name:   POA (Salient Child)
+ Theme URI:    http://example.com/twenty-fourteen-child/
+ Description:  Salient Child Theme
+ Author:       Tim Spinks
+ Author URI:   http://ninthlink.com
+ Template:     salient
+ Version:      1.0.0
+ Text Domain:  poa
+*/
+
+/*
+For older themes, and themes that do not use wp_enqueue_style() to enqueue their stylesheet, use the following line where twentyfourteen is the name of the directory where the theme resides:
+*/
+@import url("../salient/style.css");
+
+/**
+ *	FONTS
+ */
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:700);
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+/**
+ *	MISC
+ */
+.blue-cookie {
+	color: #9fcaea;
+	font-family: "Cookie";
+	line-height: 1;
+}
+div.img-hover-state a:column-link + .wpb_wrapper img {
+	-webkit-filter: brightness(100%);
+	-moz-filter: brightness(100%);
+	-ms-filter: brightness(100%);
+	filter: brightness(100%);
+	-webkit-transition: -webkit-filter .5s;
+	-moz-transition: -moz-filter .5s;
+	-ms-transition: -ms-filter .5s;
+    transition: filter .5s;
+    transition: -webkit-filter .5s;
+    /*transition: -moz-filter .5s;
+    transition: -ms-filter .5s;*/
+}
+div.img-hover-state a.column-link:hover + .wpb_wrapper img {
+	filter: brightness(250%);
+	-webkit-filter: brightness(250%);
+	/*-moz-filter: brightness(250%);
+	-ms-filter: brightness(250%);*/
+}
+
+
+/**
+ *	HEADER
+ */
+header#top a#logo {
+	background: url(images/POA_logomark.png) no-repeat 0 0;
+	font-family: "Josefin Sans", "Archivo Narrow", arial, sans-serif;
+	font-size: 34px;
+	font-weight: 700;
+	letter-spacing: .125px;
+	line-height: 1.05;
+	padding: 8px 0px 60px 114px;
+	position: absolute;
+	text-shadow: 0px 0px .5px #fff;
+	text-transform: uppercase;
+	top: -38px;
+	width: 350px;
+}
+
+header#top nav li#search-btn { display: none; }
+header#top nav li.menu-item:before {
+	content: '';
+	display: block;
+	float: right;
+	height: 34px;
+	position: absolute;
+	top: 0;
+	width: 1px;
+
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(225,225,225,0.51) 35%, rgba(225,225,225,0.65) 45%, rgba(225,225,225,0.65) 55%, rgba(225,225,225,0.51) 65%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(35%,rgba(225,225,225,0.51)), color-stop(45%,rgba(225,225,225,0.65)), color-stop(55%,rgba(225,225,225,0.65)), color-stop(65%,rgba(225,225,225,0.51)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(225,225,225,0.51) 35%,rgba(225,225,225,0.65) 45%,rgba(225,225,225,0.65) 55%,rgba(225,225,225,0.51) 65%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(225,225,225,0.51) 35%,rgba(225,225,225,0.65) 45%,rgba(225,225,225,0.65) 55%,rgba(225,225,225,0.51) 65%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(225,225,225,0.51) 35%,rgba(225,225,225,0.65) 45%,rgba(225,225,225,0.65) 55%,rgba(225,225,225,0.51) 65%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(225,225,225,0.51) 35%,rgba(225,225,225,0.65) 45%,rgba(225,225,225,0.65) 55%,rgba(225,225,225,0.51) 65%,rgba(255,255,255,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+}
+header#top nav li.menu-item:last-child:before { display: none; }
+header#top nav li.menu-item:first-child:before { display: none; }
+header#top nav li.menu-item.menu-evaluation {
+	width: 210px;
+}
+header#top nav li.menu-item.menu-evaluation a {
+	color: #9fcaea !important;
+	font-family: "Cookie";
+	font-size: 28px;
+	line-height: 1;
+	position: absolute;
+	text-align: center;
+	top: -25px;
+	width: 210px;
+}
+header#top nav li.menu-item.menu-evaluation a span {
+	color: #d9e3ed !important;
+	font-family: "Archivo Narrow", arial, sans-serif;
+}
+
+@media only screen and (max-width: 1139px) and (min-width: 1001px) {
+	header#top nav li.menu-item.menu-evaluation {
+		display: none;
+	}
+}
+@media only screen and (max-width: 1000px) and (min-width: 1px) {
+	header#top a#logo {
+		background-size: 100%;
+		color: transparent !important;
+		height: 64px;
+		margin: 0 !important;
+		padding: 0;
+		text-shadow: none;
+		top: -6px !important;
+		width: 48px;
+	}
+}
+
+
+/**
+ *	FOOTER
+ */
+div#footer-contact {
+	background-color: rgba(0,0,0,.125);
+	border-radius: 99px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,.25) inset, -1px -1px 2px rgba(255,255,255,0.25) inset;
+	float: right;
+	padding: 10px 20px;
+	text-align: center;
+}
+
+div#footer-contact span {
+	font-family: "Archivo Narrow", arial, sans-serif;
+	font-size: 24px;
+}
+div#footer-contact span.corp-phone {
+	color: #fff;
+}
+/**
+ *	ROWS AND COLUMNS
+ */
+.wpb_row .span_12 > .col.padding-1-percent { padding: 0%; }
+
+
+
+
+/**
+ *	MENUS
+ */
+
+/* * * Footer Menu * * */
+div.menu-footer-menu-container ul#menu-footer-menu li.menu-item {
+	display: inline-block;
+	font-family: "Archivo Narrow", arial, sans-serif;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin: auto 20px auto auto;
+	text-transform: uppercase;
+}
+#footer-outer #footer-widgets .col .menu-footer-menu-container ul.menu-footer-menu li.menu-item {
+	border-bottom: none !important;
 }

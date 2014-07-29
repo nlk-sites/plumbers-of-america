@@ -1,3 +1,3 @@
-<?php
-// Silence is golden. And We are agree :)
+<?php
+// Silence is golden. And We are agree :)
 ?>

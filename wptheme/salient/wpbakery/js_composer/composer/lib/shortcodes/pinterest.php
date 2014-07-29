@@ -1,3 +1,3 @@
-<?php
-class WPBakeryShortCode_VC_Pinterest extends WPBakeryShortCode {
+<?php
+class WPBakeryShortCode_VC_Pinterest extends WPBakeryShortCode {
 }

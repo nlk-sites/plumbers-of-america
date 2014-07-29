@@ -1,5 +1,5 @@
-<?php
-class WPBakeryShortCode_VC_flickr extends WPBakeryShortCode {
-
-
+<?php
+class WPBakeryShortCode_VC_flickr extends WPBakeryShortCode {
+
+
 }
